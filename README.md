@@ -91,7 +91,7 @@ A comprehensive Django-based data analysis and visualization platform that combi
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/VisualizeAnything.git
+   git clone https://github.com/achyyy/datanaut.git
    cd VisualizeAnything
    ```
 
