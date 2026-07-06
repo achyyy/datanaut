@@ -39,7 +39,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure--a-q1h7#o!(4@(_0yzny%eh^-t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = ["datanaut.onrender.com","datanaut.up.railway.app","datanaut-ai.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["datanaut-ps2e.onrender.com","datanaut.onrender.com","datanaut.up.railway.app","datanaut-ai.onrender.com", "localhost", "127.0.0.1"]
 
 
 
@@ -135,6 +135,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [
     BASE_DIR / "studio" / "static",
 ]
