@@ -1767,15 +1767,16 @@
         return;
       }
 
-      if (savedTheme === 'light') {
-        document.body.removeAttribute('data-theme');
-        themeToggle.textContent = '🌙';
-        console.log('Applied light theme from localStorage');
-      } else {
+      if (savedTheme === 'dark') {
         document.body.setAttribute('data-theme', 'dark');
         themeToggle.textContent = '☀️';
-        console.log('Applied dark theme (default or from localStorage)');
+        console.log('Applied dark theme from localStorage');
+      } else {
+        document.body.removeAttribute('data-theme');
+        themeToggle.textContent = '🌙';
+        console.log('Applied light theme (default or from localStorage)');
       }
+
 
       // Add event listeners
       if (themeToggle) {
