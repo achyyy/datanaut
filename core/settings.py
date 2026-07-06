@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 from supabase import create_client
 from dotenv import load_dotenv
+import dj_database_url
 
 # Make sure to actually call load_dotenv()
 load_dotenv()
